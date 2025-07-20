@@ -1,0 +1,9 @@
+{
+    "code-runner.saveFileBeforeRun": true,
+    "c-cpp-compile-run.run-args": "gnome-terminal",
+    "editor.fontSize": 15,
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}

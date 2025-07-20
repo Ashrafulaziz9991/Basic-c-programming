@@ -1,0 +1,34 @@
+"terminal": {
+    "external": {
+        "command": "gnome-terminal",
+        "args": [
+            "-e",
+            "bash -c 'cd $PWD; exec bash'"
+        ]
+    }
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "build", // Name of the task
+                "type": "shell", // Use shell commands
+                "command": "g++",
+                "args": [
+                    "-g", // Generate debugging information
+                    "${file}", // Use the current file
+                    "-o",
+                    "${workspaceFolder}/a.out" // Output executable
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "detail": "Generated task for debugging"
+            }
+        ]
+    }
+}
